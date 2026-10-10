@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Bright Diamond Photography &amp; Cinematography | Haute Ciné &amp; Stills</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS v3 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-background": "#e5e1e4",
+            "tertiary-fixed": "#e4e2de",
+            "surface-container-highest": "#353437",
+            "on-surface-variant": "#d0c5af",
+            "surface-container-high": "#2a2a2c",
+            "on-surface": "#e5e1e4",
+            "on-error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#604100",
+            "surface-container-low": "#1b1b1d",
+            "primary": "#f2ca50",
+            "error-container": "#93000a",
+            "error": "#ffb4ab",
+            "on-tertiary-fixed": "#1b1c1a",
+            "on-secondary-container": "#3a2600",
+            "inverse-primary": "#735c00",
+            "surface-bright": "#39393b",
+            "on-secondary": "#432c00",
+            "inverse-surface": "#e5e1e4",
+            "tertiary": "#d0cecb",
+            "secondary-container": "#bd8718",
+            "on-tertiary-fixed-variant": "#474744",
+            "outline": "#99907c",
+            "secondary-fixed": "#ffdead",
+            "on-primary-container": "#554300",
+            "background": "#131315",
+            "surface-container-lowest": "#0e0e10",
+            "surface-container": "#201f21",
+            "on-error": "#690005",
+            "tertiary-fixed-dim": "#c8c6c3",
+            "on-secondary-fixed": "#281900",
+            "primary-fixed": "#ffe088",
+            "on-tertiary-container": "#454543",
+            "surface-tint": "#e9c349",
+            "secondary-fixed-dim": "#fabc4d",
+            "secondary": "#fabc4d",
+            "surface-variant": "#353437",
+            "primary-container": "#d4af37",
+            "inverse-on-surface": "#313032",
+            "primary-fixed-dim": "#e9c349",
+            "on-primary-fixed": "#241a00",
+            "tertiary-container": "#b4b3af",
+            "on-primary": "#3c2f00",
+            "outline-variant": "#4d4635",
+            "surface-dim": "#131315",
+            "surface": "#131315",
+            "on-tertiary": "#30312e",
+            "on-primary-fixed-variant": "#574500"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "4rem",
+            "gutter": "2rem",
+            "margin-mobile": "1.5rem",
+            "space-2xl": "4rem",
+            "space-3xl": "6rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-xl": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "label-md": ["Inter"],
+            "display-xl-mobile": ["Playfair Display"],
+            "headline-md-mobile": ["Playfair Display"],
+            "body-md": ["Inter"],
+            "body-sm": ["Inter"],
+            "label-caps": ["Inter"],
+            "body-lg": ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary font-body-md antialiased overflow-x-hidden relative">
+
+  <!-- ================= PRELOADER ================= -->
+  <div id="preloader">
+    <div class="loader-brand">
+      Bright <span>Diamond</span>
+    </div>
+    <div class="loader-subtitle">Photography</div>
+    <div class="loader-bar-bg">
+      <div class="loader-bar-fill" id="loader-bar-fill"></div>
+    </div>
+    <div class="loader-status" id="loader-status">
+      LOADING EXPERIENCE
+    </div>
+  </div>
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
+    <div class="flex justify-between items-center w-full px-6 md:px-16 max-w-7xl mx-auto h-24 md:h-32">
+      <!-- Brand Logo Anchor -->
+      <a class="flex items-center group text-decoration-none py-1" href="#scroll-animation" aria-label="Bright Diamond Photography Home">
+        <img alt="Bright Diamond Photography Logo" class="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_4px_25px_rgba(242,202,80,0.45)]" src="/logo.png"/>
+      </a>
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-7">
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-label-caps font-label-caps tracking-widest" href="#about">About</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-label-caps font-label-caps tracking-widest" href="#services">Services</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-label-caps font-label-caps tracking-widest" href="#portfolio">Portfolio</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-label-caps font-label-caps tracking-widest" href="#why-us">Why Us</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-label-caps font-label-caps tracking-widest" href="#testimonials">Praise</a>
+        <a class="text-primary border-b border-primary pb-1 text-label-caps font-label-caps tracking-widest transition-colors duration-200" href="#contact">Contact</a>
+      </nav>
+      <!-- Right Trailing Actions -->
+      <div class="flex items-center space-x-4">
+        <!-- Modern Metallic Gold WhatsApp Quick Action -->
+        <a class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 hover:bg-primary/20 border border-primary/40 hover:border-primary text-primary transition-all duration-300 shadow-[0_0_20px_rgba(242,202,80,0.25)] hover:shadow-[0_0_30px_rgba(242,202,80,0.5)] hover:scale-110 active:scale-95 backdrop-blur-md group" href="https://wa.me/919158600517?text=Hi%20Bright%20Diamond%20photography%20,%20would%20like%20to%20inquire%20about%20photography%20and%20cinematography%20packages%20and%20request%20a%20quotation." rel="noopener noreferrer" target="_blank" title="Inquire & Get Quotation on WhatsApp" aria-label="WhatsApp Inquiry">
+          <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 24 24">
+            <defs>
+              <linearGradient id="waGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF6DA"/>
+                <stop offset="50%" stop-color="#D4AF37"/>
+                <stop offset="100%" stop-color="#FAB005"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#waGoldGrad)" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.84 2.791.84 3.18 0 5.767-2.587 5.768-5.766.001-3.18-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.503-4.497 10-10 10-1.748 0-3.385-.453-4.819-1.246l-5.181 1.308 1.353-4.947c-.902-1.499-1.423-3.25-1.423-5.115 0-5.503 4.497-10 10-10s10 4.497 10 10zm-4.708 3.52c-.22-.11-1.302-.642-1.504-.715-.202-.074-.35-.11-.498.11-.148.22-.572.715-.701.862-.13.147-.258.165-.478.055-.22-.11-.93-.343-1.772-1.094-.655-.584-1.098-1.306-1.227-1.527-.13-.22-.014-.339.096-.449.099-.098.22-.258.33-.387.11-.13.147-.22.22-.367.073-.147.037-.275-.018-.386s-.498-1.2-.682-1.643c-.18-.432-.363-.373-.498-.38l-.424-.007c-.147 0-.386.055-.588.275s-.772.754-.772 1.838.791 2.133.901 2.28c.11.147 1.556 2.376 3.769 3.332.526.228.937.364 1.258.466.529.168 1.01.144 1.39.088.424-.063 1.302-.532 1.486-1.046.184-.514.184-.954.13-.105-.055-.09-.202-.146-.422-.256z"/>
+          </svg>
+        </a>
+        <!-- Modern Metallic Gold Instagram Action -->
+        <a class="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 hover:bg-primary/20 border border-primary/40 hover:border-primary text-primary transition-all duration-300 shadow-[0_0_20px_rgba(242,202,80,0.25)] hover:shadow-[0_0_30px_rgba(242,202,80,0.5)] hover:scale-110 active:scale-95 backdrop-blur-md group" href="https://www.instagram.com/brightdiamond.in?mdxt=b2lzM3hscjQxcjYx" rel="noopener noreferrer" target="_blank" title="Follow @brightdiamond.in on Instagram" aria-label="Bright Diamond Instagram">
+          <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 24 24">
+            <defs>
+              <linearGradient id="instaGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF6DA"/>
+                <stop offset="50%" stop-color="#D4AF37"/>
+                <stop offset="100%" stop-color="#FAB005"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#instaGoldGrad)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <!-- Mobile Drawer Toggle -->
+        <button aria-label="Open Navigation Menu" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg text-on-surface border border-white/10 hover:text-primary transition-colors" id="mobileMenuBtn">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Slide-Down Drawer -->
+    <div class="hidden lg:hidden border-t border-outline-variant/20 bg-surface-container-lowest/95 backdrop-blur-xl px-6 py-6 transition-all duration-300" id="mobileDrawer">
+      <div class="flex flex-col space-y-4">
+        <a class="mobile-nav-link text-on-surface font-label-caps text-label-caps tracking-widest py-1 border-b border-white/5" href="#about">About</a>
+        <a class="mobile-nav-link text-on-surface font-label-caps text-label-caps tracking-widest py-1 border-b border-white/5" href="#services">Services</a>
+        <a class="mobile-nav-link text-on-surface font-label-caps text-label-caps tracking-widest py-1 border-b border-white/5" href="#portfolio">Portfolio</a>
+        <a class="mobile-nav-link text-on-surface font-label-caps text-label-caps tracking-widest py-1 border-b border-white/5" href="#why-us">Why Us</a>
+        <a class="mobile-nav-link text-on-surface font-label-caps text-label-caps tracking-widest py-1 border-b border-white/5" href="#testimonials">Testimonials</a>
+        <a class="mobile-nav-link text-on-surface font-label-caps text-label-caps tracking-widest py-1 border-b border-white/5" href="#contact">Contact Studio</a>
+        <div class="pt-3 flex flex-col space-y-2">
+          <a class="text-center w-full py-2 rounded border border-white/10 text-on-surface-variant font-label-caps text-label-caps uppercase" href="https://wa.me/919158600517?text=Hi%20Bright%20Diamond%20photography%20,%20would%20like%20to%20inquire%20about%20photography%20and%20cinematography%20packages%20and%20request%20a%20quotation." target="_blank">Chat On WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 2. SCROLL ANIMATION SECTION WITH TRANSPARENT GLASS BLOCKS & HOTSPOTS      -->
+  <!-- ========================================================================= -->
+  <section class="scroll-sequence-container" id="scroll-animation">
+    <div class="sticky-canvas-viewport">
+      <div class="grid-backdrop"></div>
+      <div class="canvas-vignette"></div>
+      
+      <!-- Main Canvas for 240-Frame Animation -->
+      <canvas id="animation-canvas"></canvas>
+
+
+      <!-- Transparent Glass HUD Cards tied to frame milestones -->
+      <div class="hud-story-layer">
+        <!-- Phase 1: Frame 0 - 45 -->
+        <div class="hud-card hud-pos-bottom-left active" data-frame-min="0" data-frame-max="45">
+          <h2 class="hud-title">Every Moment, Beautifully Captured</h2>
+          <p class="hud-desc">
+            Turn your precious moments into timeless memories with stunning photography and cinematic films.
+          </p>
+        </div>
+
+        <!-- Phase 2: Frame 46 - 110 -->
+        <div class="hud-card hud-pos-top-right" data-frame-min="46" data-frame-max="110">
+          <h2 class="hud-title">Your Story, Our Creativity</h2>
+          <p class="hud-desc">
+            Every wedding, celebration, and special occasion deserves a unique story told through our lens.
+          </p>
+        </div>
+
+        <!-- Phase 3: Frame 111 - 170 -->
+        <div class="hud-card hud-pos-bottom-left" data-frame-min="111" data-frame-max="170">
+          <h2 class="hud-title">Packages Tailored to Your Budget</h2>
+          <p class="hud-desc">
+            Get a personalized quotation based on your event, photography needs, and budget.
+          </p>
+        </div>
+
+        <!-- Phase 4: Frame 171 - 239 -->
+        <div class="hud-card hud-pos-top-right" data-frame-min="171" data-frame-max="239">
+          <h2 class="hud-title">Easy Enquiry, Hassle-Free Booking</h2>
+          <p class="hud-desc">
+            Tell us about your special day and get in touch with us easily through WhatsApp to discuss your requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 3. ABOUT US SECTION (Curatorial Philosophy & Director Profile)          -->
+  <!-- ========================================================================= -->
+  <section class="py-space-3xl px-6 md:px-16 max-w-7xl mx-auto" id="about">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <!-- Visual Column: Master Director Portrait with Awards Seal -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative overflow-hidden rounded border border-white/10 group">
+          <img alt="Abhishek Kurhe - Director &amp; Founder" class="w-full aspect-[4/5] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Abhishek Kurhe, Director and Founder of Bright Diamond Photography" src="/abhishek-kurhe.jpg"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+          <!-- Bottom Legend -->
+          <div class="absolute bottom-4 left-4 right-4 p-4 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10">
+            <span class="text-label-caps font-label-caps text-primary tracking-widest block text-[10px] uppercase">Director &amp; Founder</span>
+            <span class="text-headline-sm font-headline-sm text-on-surface">ABHISHEK KURHE</span>
+            <p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">10+ Years of Experience in Photography &amp; Cinematography</p>
+          </div>
+        </div>
+        <!-- Floating Golden Award Medallion -->
+        <div class="absolute -top-5 -right-5 w-32 h-32 rounded-full bg-surface-container/95 border border-primary/50 flex flex-col items-center justify-center p-2.5 text-center shadow-2xl shadow-black/60 backdrop-blur-md">
+          <span class="material-symbols-outlined text-primary text-[24px]">workspace_premium</span>
+          <span class="text-label-caps font-label-caps text-[8.5px] text-primary tracking-wider uppercase font-bold leading-snug mt-1">CANDID PHOTOGRAPHER AWARD, AMRAVATI</span>
+          <span class="text-[10px] text-on-surface/90 mt-1 font-semibold tracking-wide">2023–2024</span>
+        </div>
+      </div>
+      <!-- Narrative Column -->
+      <div class="lg:col-span-7 flex flex-col justify-center">
+        <div class="inline-flex items-center space-x-2 text-primary font-label-caps text-label-caps tracking-[0.2em] uppercase mb-3">
+          <span class="w-4 h-[1px] bg-primary"></span>
+          <span>Our Story &amp; Philosophy</span>
+        </div>
+        <h2 class="text-headline-md md:text-headline-lg font-headline-lg text-on-surface mb-6 leading-tight">
+          We Don’t Just Take Photos. <br class="hidden sm:inline"/>
+          <span class="gold-shimmer italic">We Capture Real Emotions &amp; Timeless Memories.</span>
+        </h2>
+        <p class="text-body-lg font-body-lg text-tertiary mb-6 font-light leading-relaxed">
+          At <strong class="text-on-surface font-normal">Bright Diamond Photography</strong>, we believe every wedding, pre-wedding shoot, and special celebration tells a unique story. With a passion for natural lighting and clean, elegant visuals, our team travels across cities and destination venues to document your most meaningful moments.
+        </p>
+        <p class="text-body-md font-body-md text-on-surface-variant mb-8 leading-relaxed">
+          We focus on natural candid moments rather than stiff, forced poses—capturing genuine smiles, heartfelt emotions, happy tears, and the joy of your family traditions. Every photograph and film is carefully edited with rich, cinematic colors so you can relive your special day for years to come.
+        </p>
+        <!-- 4 Distinct Highlight Anchors -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+          <div class="p-3.5 rounded bg-surface-container-low border border-white/5 flex items-start space-x-3">
+            <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">favorite</span>
+            <div>
+              <h4 class="text-body-md font-body-md text-on-surface font-semibold">Candid Emotion Mastery</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Invisible presence for true, spontaneous human emotion.</p>
+            </div>
+          </div>
+          <div class="p-3.5 rounded bg-surface-container-low border border-white/5 flex items-start space-x-3">
+            <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">videocam</span>
+            <div>
+              <h4 class="text-body-md font-body-md text-on-surface font-semibold">4K RAW Cine Craft</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Anamorphic lenses, lossless 12-bit audio capture, and master color.</p>
+            </div>
+          </div>
+          <div class="p-3.5 rounded bg-surface-container-low border border-white/5 flex items-start space-x-3">
+            <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">diamond</span>
+            <div>
+              <h4 class="text-body-md font-body-md text-on-surface font-semibold">Personalized Shoot Planning</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Full consultation on event timings, shoot locations, and creative ideas.</p>
+            </div>
+          </div>
+          <div class="p-3.5 rounded bg-surface-container-low border border-white/5 flex items-start space-x-3">
+            <span class="material-symbols-outlined text-primary text-[20px] mt-0.5">menu_book</span>
+            <div>
+              <h4 class="text-body-md font-body-md text-on-surface font-semibold">Premium Luxury Albums</h4>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">High-definition photo albums designed to last for generations.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a class="inline-flex items-center space-x-2 text-primary font-label-caps text-label-caps tracking-widest uppercase hover:text-white transition-colors duration-200" href="#contact">
+            <span>Let's Create Something Beautiful Together</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. OUR SERVICES (8 Curated Disciplines with Interactive Direct Quotation) -->
+  <!-- ========================================================================= -->
+  <section class="py-space-3xl px-6 md:px-16 max-w-7xl mx-auto border-t border-outline-variant/20" id="services">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-label-caps font-label-caps text-primary tracking-[0.25em] uppercase block mb-2">Our Services</span>
+      <h2 class="text-headline-md md:text-headline-lg font-headline-lg text-on-surface mb-4">
+        Photography &amp; Cinematography Services
+      </h2>
+      <p class="text-body-md font-body-md text-tertiary">
+        From grand wedding rituals and romantic pre-weddings to maternity, baby milestones, and family celebrations—we capture every special moment with beautiful, cinematic quality.
+      </p>
+    </div>
+    <!-- 8 Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Service 1: Wedding Photography -->
+      <div class="group p-5 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col">
+        <div class="relative aspect-[4/3] rounded overflow-hidden mb-4">
+          <img alt="Wedding Photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury grand traditional wedding ceremony photograph with warm ambient oil lamps, sacred rituals, golden jewelry details, joyful bride and groom smiles, fine art editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZkzqMIMUHnn11m7UBC8KMHDaTWxCxCJJ4bbNtEf2PEhmoNhOVFZyn7cvKJyziE3jEXJFSvk_YyUPEUtDCYMKGT8EpGQxststkt3NtECC0MeNxX110uOYslBGFv3J4aPQvI83_bN_IPFTKnZs_797YqmtVBYbE8YJXWDWi6ADi5pG26QjyagDjyjL9B0i-LD_1Ifvkylc3WJSVxA9ES9gVTVA_Ii7pGuoPZF0VzVM3aa1035RVynp7CA"/>
+          <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps tracking-wider text-primary border border-white/10">Traditional &amp; Candid</span>
+        </div>
+        <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Wedding Photography</h3>
+        <p class="text-body-sm font-body-sm text-on-surface-variant">From sacred rituals and emotional pheras to joyful candid moments and energetic reception parties, we capture your complete wedding story beautifully.</p>
+      </div>
+      <!-- Service 2: Pre-Wedding Photography -->
+      <div class="group p-5 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col">
+        <div class="relative aspect-[4/3] rounded overflow-hidden mb-4">
+          <img alt="Pre-Wedding Photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High fashion couple in bespoke evening wear during golden sunset over architectural heritage fortress, drone aerial view, warm atmospheric tones and editorial romance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAloqQG8vFezq1R8UQvZ9SQKkhWtFGzZryZkDloUXfhxjCgOpB6Bb2JobSF-ycj9TEFaH8DR4Lcj6nXtV-cxKQPKxrWAU_hQW7vuH8CoFmjCdauNEKC9D4xGxmpJJiS2BfjhP7P5IamG21VftvioH2SeYI3A51xDgtTztBwgRdkqkL2Vw9lpoJFvyzKyBbe5zwhkjgBDN1W8kzCw0ze65ZivVmUq4bT4_YcE3l5PY-pfSVh8wfan7zabA"/>
+          <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps tracking-wider text-primary border border-white/10">Destination &amp; Romance</span>
+        </div>
+        <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Pre-Wedding Shoots</h3>
+        <p class="text-body-sm font-body-sm text-on-surface-variant">Romantic outdoor shoots, scenic destination trips, and cinematic drone views that capture your real love story and chemistry.</p>
+      </div>
+      <!-- Service 3: Engagement Photography -->
+      <div class="group p-5 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col">
+        <div class="relative aspect-[4/3] rounded overflow-hidden mb-4">
+          <img alt="Engagement Photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Intimate engagement proposal ring ceremony in candlelit palace courtyard with sparkling diamond ring macro focus and emotional genuine embrace of loving couple" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAWiQmT_ZiVvUFSlkZDCDv-sh3ZYtqHjAWB8jejbHGBdp71Uu3IQXwIZ_GpyB4yKOijBGL1XULaIeuRjYsBh4zNCLzHKtvgckf_hPJRy08PhPw3SK6NJZL1DHFggz8BCeQZG-TSglpf0u2gnQ0WB0MJBTTu2r-n9aLM8n6HRaeyRs3FluzK3-FkVYvCzqTWtQ08PU2ltzUWBEyDR9Hwz5nZbOiFDBzGY3I7QHTR5wcl7QXbF5UKtZIfA"/>
+          <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps tracking-wider text-primary border border-white/10">Roka &amp; Ring Ceremony</span>
+        </div>
+        <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Engagement &amp; Ring Ceremony</h3>
+        <p class="text-body-sm font-body-sm text-on-surface-variant">Capturing the special moment where forever begins—surprise proposals, ring exchanges, and joyous family celebrations.</p>
+      </div>
+      <!-- Service 4: Baby Shower Photography -->
+      <div class="group p-5 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col">
+        <div class="relative aspect-[4/3] rounded overflow-hidden mb-4">
+          <img alt="Baby Shower Photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Gentle expectant mother cradling baby bump in soft ivory and golden silk fabric surrounded by floral decorations and loving family smiles in bright warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5F_JhlQ9Oh-0tjmTv-aI8LAhLNtgGYupCYGyGlyrm2OPKHweJflKmvJEuAe4fFHA8sJ_UbCu0O9QTRe4oMr9ZfJyQqIBcoqS-MWNNwD975kYmojOIhbo6ledr4UGoekbaqdm7FlA-5YL0wBtAVRdB5lkq-m5T3nETCz8a1YTsoKJFTmFxecrftOQ_uk13VTjkQDUKnpEjYo8e_xrMi9b21tbV5e0epWZymsaJBW07-yIp5AFm968TIg"/>
+          <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps tracking-wider text-primary border border-white/10">Maternity &amp; Newborn</span>
+        </div>
+        <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Maternity &amp; Baby Shower</h3>
+        <p class="text-body-sm font-body-sm text-on-surface-variant">Heartwarming portraits celebrating motherhood, traditional Godh Bharai blessings, and joyful family smiles.</p>
+      </div>
+      <!-- Service 5: Birthday Shoots -->
+      <div class="group p-5 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col">
+        <div class="relative aspect-[4/3] rounded overflow-hidden mb-4">
+          <img alt="Birthday Shoots" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Lavish milestone birthday evening party with champagne tower, celebratory sparklers, high fashion styling, joyful guests and dynamic magazine style portraits" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5T6_cxMCo7XZEbKPL3WzzsczfIBgcTDyNkN43rNcB-1eySB3S7_s7sdUFRfgraUAL9tz7Ipc89OcOOIQ1XBycG0_647CcgI0CpuCh4kNaz8zAWCTa1QsA80s_SSVG342CI-2Y2JUdhigkB_tsO9dCRzlLN_fAaXOHcH6rIMB8h9gJwz_MP3_A4pUBWmo4raMFFZrnjoaBsV2PG9lpAEtirZbyAAhSvcp3SM6RaGsmJfbJULZ-7-hQtw"/>
+          <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps tracking-wider text-primary border border-white/10">Family Celebrations</span>
+        </div>
+        <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Birthday &amp; Milestone Events</h3>
+        <p class="text-body-sm font-body-sm text-on-surface-variant">From 1st birthday cake smashes to grand anniversary celebrations—capturing all the fun, laughter, and party moments.</p>
+      </div>
+      <!-- Service 6: Event Management -->
+      <div class="group p-5 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col">
+        <div class="relative aspect-[4/3] rounded overflow-hidden mb-4">
+          <img alt="Event Management" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Architectural luxury event production with custom ceiling floral chandeliers, ambient warm illumination, immaculately set dining banquet tables and pristine stage coordination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM0HsM2rTwDqLlA1LHwcPk0Txx73qdojO5-bGlfj4dx21I3mW3FyCFTedlNhiD1i7gHKtmebURk1YWi6JEVWsi1dJU75R-9SEYzTjTRBzaKfP61WXdlWtRxfbk-twTblpPw8IXK2hqvUlmKdeHuldmrNIPex89rGw-zSOW36PJpJqvjZkKkavsU6Qt6TKGKNGMbstr7-DappzcYbyLOvq1h74PCFKIdfS06dPa6dAyrSTaeBsd0Bv_WQ"/>
+          <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps tracking-wider text-primary border border-white/10">Decor &amp; Planning</span>
+        </div>
+        <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Event Planning &amp; Decor</h3>
+        <p class="text-body-sm font-body-sm text-on-surface-variant">Complete event management, beautiful stage and lighting setups, and smooth execution so you can celebrate stress-free.</p>
+      </div>
+      <!-- Service 7: Cinematography -->
+      <div class="group p-5 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col">
+        <div class="relative aspect-[4/3] rounded overflow-hidden mb-4">
+          <img alt="Cinematography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end motion picture camera rig with anamorphic lens capturing a cinematic bride walking through dramatic archway rays of sunlight with filmic color tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC9CrxrNKMLgUwF2Nmgb5DEU8zKh-Dw7ESAruqi3uDF3YeAEO22bdKVYy2OJMP8lVXFz_7V5It0N5FozGL1Vm6YPz2Gqy44FpJEkzZqFNoHY2VOKKMoum8zQTk8EGPO6IB41VTstJ226AyzjNUjc99Pwhd3kMPxwDNi9WzvaG5ZseFTkB5Z4N06uKLksppeEq8h1EvQJ_NHL6r-FKHDCNRJV-APMTqnziAYeuNIaL7JTS54wlrqa7l9w"/>
+          <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps tracking-wider text-primary border border-white/10">Cinematic Video</span>
+        </div>
+        <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">4K Wedding Cinema</h3>
+        <p class="text-body-sm font-body-sm text-on-surface-variant">Full-length cinematic wedding films with crystal-clear audio, drone views, and movie-style color grading.</p>
+      </div>
+      <!-- Service 8: Short Films -->
+      <div class="group p-5 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col">
+        <div class="relative aspect-[4/3] rounded overflow-hidden mb-4">
+          <img alt="Short Films" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Art-house wedding cinema reel still showing poetic close-up of handwritten vows and tears of joy with cinematic grain and rich dark obsidian shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Uh_T5U4jl3e3Wf0eaxWPs2hH8zNm3WRRtwELssEqbEjaR1nJr8Kz7rb4wVfDYY-8QsX7Mo0qOBeN_4eB3neIMQB3k4_DZad05nDXmoTr_piH5_Tth0FmDv5pMHpiBFg4bqPBWPopY0g9yAHfKJ0B85qcUZBLNxR3gwimj9hDoRj6nIxV1kzc1kC2HovnNzi6drMITxiKptV3GwC11tkhrtsLXedljVOTg1ZRbRoI1Wxg4qoMSAlJkA"/>
+          <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded bg-surface-container-lowest/80 text-[10px] font-label-caps tracking-wider text-primary border border-white/10">Reels &amp; Teasers</span>
+        </div>
+        <h3 class="text-headline-sm font-headline-sm text-on-surface mb-2">Teasers &amp; Social Reels</h3>
+        <p class="text-body-sm font-body-sm text-on-surface-variant">Trendy 1 to 3-minute highlight teasers and Instagram reels, edited with trending music to share with friends and family.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. PORTFOLIO / GALLERY (Masonry with Interactive Filter & Lightbox)       -->
+  <!-- ========================================================================= -->
+  <section class="py-space-3xl px-6 md:px-16 max-w-7xl mx-auto" id="portfolio">
+    <div class="mb-12">
+      <span class="text-label-caps font-label-caps text-primary tracking-[0.25em] uppercase block mb-2">Our Portfolio</span>
+      <h2 class="text-headline-md md:text-headline-lg font-headline-lg text-on-surface">
+        Real Stories &amp; Beautiful Memories
+      </h2>
+    </div>
+
+    <!-- Masonry-Style Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryContainer">
+      <!-- Item 1: Beach Lift Romance -->
+      <div class="gallery-item group relative rounded overflow-hidden bg-surface-container-low border border-white/5 cursor-pointer shadow-lg hover:border-primary/40 transition-all duration-300" onclick="openLightbox(0)">
+        <img alt="Romantic Beach Couple Shoot" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" src="/portfolio-1.jpg"/>
+      </div>
+      <!-- Item 2: Indoor Reception Couple -->
+      <div class="gallery-item group relative rounded overflow-hidden bg-surface-container-low border border-white/5 cursor-pointer shadow-lg hover:border-primary/40 transition-all duration-300" onclick="openLightbox(1)">
+        <img alt="Reception Celebration" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" src="/portfolio-2.jpg"/>
+      </div>
+      <!-- Item 3: Street Celebration Dance -->
+      <div class="gallery-item group relative rounded overflow-hidden bg-surface-container-low border border-white/5 cursor-pointer shadow-lg hover:border-primary/40 transition-all duration-300" onclick="openLightbox(2)">
+        <img alt="Celebration of Love" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" src="/portfolio-3.jpg"/>
+      </div>
+      <!-- Item 4: Candid Heritage Shoot -->
+      <div class="gallery-item group relative rounded overflow-hidden bg-surface-container-low border border-white/5 cursor-pointer shadow-lg hover:border-primary/40 transition-all duration-300" onclick="openLightbox(3)">
+        <img alt="Candid Storytelling" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" src="/portfolio-4.jpg"/>
+      </div>
+      <!-- Item 5: Mehendi & Ring Details -->
+      <div class="gallery-item group relative rounded overflow-hidden bg-surface-container-low border border-white/5 cursor-pointer shadow-lg hover:border-primary/40 transition-all duration-300" onclick="openLightbox(4)">
+        <img alt="Mehendi & Details" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" src="/portfolio-5.jpg"/>
+      </div>
+      <!-- Item 6: Bridal Elegance & Mehendi -->
+      <div class="gallery-item group relative rounded overflow-hidden bg-surface-container-low border border-white/5 cursor-pointer shadow-lg hover:border-primary/40 transition-all duration-300" onclick="openLightbox(5)">
+        <img alt="Bridal Elegance & Mehendi" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" src="/portfolio-6.jpg"/>
+      </div>
+      <!-- Item 7: Temple Rituals & Moments -->
+      <div class="gallery-item group relative rounded overflow-hidden bg-surface-container-low border border-white/5 cursor-pointer shadow-lg hover:border-primary/40 transition-all duration-300" onclick="openLightbox(6)">
+        <img alt="Temple Steps Traditional Moments" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" src="/portfolio-7.jpg"/>
+      </div>
+      <!-- Item 8: Sacred Pheras & Gathbandhan -->
+      <div class="gallery-item group relative rounded overflow-hidden bg-surface-container-low border border-white/5 cursor-pointer shadow-lg hover:border-primary/40 transition-all duration-300" onclick="openLightbox(7)">
+        <img alt="Sacred Pheras & Gathbandhan" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" src="/portfolio-8.jpg"/>
+      </div>
+      <!-- Item 9: Tender Affection & Hand Kiss -->
+      <div class="gallery-item group relative rounded overflow-hidden bg-surface-container-low border border-white/5 cursor-pointer shadow-lg hover:border-primary/40 transition-all duration-300" onclick="openLightbox(8)">
+        <img alt="Groom Kissing Bride's Hand" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-700" src="/portfolio-9.jpg"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. WHY CHOOSE US (Trust & Mastery Pillars)                                 -->
+  <!-- ========================================================================= -->
+  <section class="py-space-3xl px-6 md:px-16 max-w-7xl mx-auto border-t border-outline-variant/20" id="why-us">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-label-caps font-label-caps text-primary tracking-[0.25em] uppercase block mb-2">Why Choose Us</span>
+      <h2 class="text-headline-md md:text-headline-lg font-headline-lg text-on-surface mb-3">
+        Why Families Trust Bright Diamond
+      </h2>
+      <p class="text-body-md font-body-md text-tertiary">
+        5 key promises that ensure your special celebration is captured flawlessly.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <!-- Pillar 1 -->
+      <div class="p-6 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-colors">
+        <span class="material-symbols-outlined text-primary text-[32px] mb-4">auto_stories</span>
+        <h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Natural Candid Moments</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">No stiff poses or forced smiles. We capture real laughter, happy tears, and spontaneous family emotions.</p>
+      </div>
+      <!-- Pillar 2 -->
+      <div class="p-6 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-colors">
+        <span class="material-symbols-outlined text-primary text-[32px] mb-4">movie_filter</span>
+        <h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Top Cinema Equipment</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">Shot with professional 4K cinema cameras, aerial drones, and clear wireless audio recorders with backup gear on site.</p>
+      </div>
+      <!-- Pillar 3 -->
+      <div class="p-6 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-colors">
+        <span class="material-symbols-outlined text-primary text-[32px] mb-4">style</span>
+        <h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Personalized Planning</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">Pre-event guidance on timings, outfit styling, and lighting to make sure your shoot runs smoothly and stress-free.</p>
+      </div>
+      <!-- Pillar 4 -->
+      <div class="p-6 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-colors">
+        <span class="material-symbols-outlined text-primary text-[32px] mb-4">draw</span>
+        <h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">Flawless Editing &amp; Albums</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">Natural skin retouching, rich cinematic color grading, and luxury high-definition albums built to last for generations.</p>
+      </div>
+      <!-- Pillar 5 -->
+      <div class="p-6 rounded bg-surface-container-low border border-white/10 hover:border-primary/40 transition-colors">
+        <span class="material-symbols-outlined text-primary text-[32px] mb-4">verified_user</span>
+        <h4 class="text-headline-sm font-headline-sm text-on-surface mb-2">On-Time Delivery</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">Quick highlight teaser delivered within 72 hours, private online photo gallery, and 100% transparent timelines.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. TESTIMONIALS (Cinematic Client Love)                                    -->
+  <!-- ========================================================================= -->
+  <section class="py-space-3xl px-6 md:px-16 max-w-7xl mx-auto border-t border-outline-variant/20" id="testimonials">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-label-caps font-label-caps text-primary tracking-[0.25em] uppercase block mb-2">Client Praise</span>
+      <h2 class="text-headline-md md:text-headline-lg font-headline-lg text-on-surface mb-3">
+        Love Notes from Across India
+      </h2>
+      <p class="text-body-md font-body-md text-tertiary">
+        Heartfelt words from couples and families whose special celebrations we had the honor to capture.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Review 1 -->
+      <div class="p-8 rounded bg-surface-container-low border border-white/10 flex flex-col justify-between">
+        <div>
+          <!-- Star Rating -->
+          <div class="flex items-center space-x-1 text-primary mb-4">
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+          </div>
+          <p class="text-body-md font-body-md text-on-surface italic mb-6 leading-relaxed">
+            "When we watched our wedding teaser video, our whole family had happy tears! Bright Diamond captured every ritual, emotional moment, and reception dance so beautifully. Hiring them was the best decision of our wedding."
+          </p>
+        </div>
+        <div class="flex items-center space-x-4 pt-4 border-t border-white/5">
+          <img alt="Client Testimonial" class="w-12 h-12 rounded-full object-cover border border-primary/30" data-alt="Small round avatar portrait of elegant married couple smiling fondly at the camera in formal wedding evening attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyQZB1kQ1a6npjqH1mukpIcP3t8KYRVqC9sULs9HvuTuvs1EJUNo8k5lSAap6NVRMesep6qTpxXVC8-Mv6vj9JEajz0I4DBJFsvZjHX2cFuBO2_FGbnsAYxYXRANKwP3uW_hzE5Nsx0hR7GxEOTSCz_l_mp7LjUtRvB5g-H4-4CDhdGMO9M0BevSnVRxAIeyjGjb-HhEjAPmUvkPgQEff7IXLNk7_oSdZtZcjw9nRW0-mQ9s6JvFFpLQ"/>
+          <div>
+            <h5 class="text-body-md font-body-md text-on-surface font-semibold">Ananya &amp; Siddharth</h5>
+            <p class="text-body-sm font-body-sm text-on-surface-variant text-[12px]">Udaipur Wedding • Dec 2024</p>
+          </div>
+        </div>
+      </div>
+      <!-- Review 2 -->
+      <div class="p-8 rounded bg-surface-container-low border border-white/10 flex flex-col justify-between">
+        <div>
+          <!-- Star Rating -->
+          <div class="flex items-center space-x-1 text-primary mb-4">
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+          </div>
+          <p class="text-body-md font-body-md text-on-surface italic mb-6 leading-relaxed">
+            "Our pre-wedding shoot was such a fun and comfortable experience! Abhishek and the team made us feel completely relaxed in front of the camera. The photos and drone shots look like scenes from a movie."
+          </p>
+        </div>
+        <div class="flex items-center space-x-4 pt-4 border-t border-white/5">
+          <img alt="Client Testimonial" class="w-12 h-12 rounded-full object-cover border border-primary/30" data-alt="Small round avatar of stylish couple in sunglasses and evening wear laughing together against sunlit European backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY1MTleS-SwQFec6iBmE_vXHTM-0g81te_4rl5UHWdety4RxjPqREteS8T8YdmVLgjq3JUKUwEHgj2k-yXGTN7NVxiCd6504sQQUTqpJO-cvTNqGwlNDYyFARVDEP96Pad9pYskQiaa3KIjqUKwT0_1w7ytD_XIVUCP59XHcKMP97EnvNOvTyRAzLQ-3mNtnYtIT0MHRjOvzjXKBuyFGTL9pjJLkgy88n5AZec0HUQYpBPuzuvQnXvxw"/>
+          <div>
+            <h5 class="text-body-md font-body-md text-on-surface font-semibold">Karan &amp; Tanya</h5>
+            <p class="text-body-sm font-body-sm text-on-surface-variant text-[12px]">Pre-Wedding Shoot, Goa • Sept 2024</p>
+          </div>
+        </div>
+      </div>
+      <!-- Review 3 -->
+      <div class="p-8 rounded bg-surface-container-low border border-white/10 flex flex-col justify-between">
+        <div>
+          <!-- Star Rating -->
+          <div class="flex items-center space-x-1 text-primary mb-4">
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+            <span class="material-symbols-outlined text-[18px]">star</span>
+          </div>
+          <p class="text-body-md font-body-md text-on-surface italic mb-6 leading-relaxed">
+            "Bright Diamond covered my sister's Godh Bharai and our father's 60th birthday celebration. Their team is so polite, punctual, and delivered all the photos and albums on time. They are now our family's go-to photography team!"
+          </p>
+        </div>
+        <div class="flex items-center space-x-4 pt-4 border-t border-white/5">
+          <img alt="Client Testimonial" class="w-12 h-12 rounded-full object-cover border border-primary/30" data-alt="Small round avatar of smiling young professional woman wearing elegant silk traditional attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmmA9WS5qlLjgP9gPD7RuBbTAvYUk_TMHh0WHlOsO4LQ6lqbiSpJv6jF7erF0bdeMBZB9m3kfct-U_Lo32tuB2f36LaC00-ddnM07v2h4aEFEcVxjf-Keau0pASPE1YDfDBfPwzbgqEa_5Ur0pBKn1oYSmRKtA18OGKVptnZJQbnB6Y37z47U7BRNmkRqo9JRUOZAHNR5rFzCTmp4rfcsm0ky_fKDKXJCgL9_Kb85r-0otxNI_eTpGeQ"/>
+          <div>
+            <h5 class="text-body-md font-body-md text-on-surface font-semibold">Meera Singhania</h5>
+            <p class="text-body-sm font-body-sm text-on-surface-variant text-[12px]">Family Celebrations, Mumbai • March 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ========================================================================= -->
+  <!-- 12. CONTACT & ATELIER LOCATION                                            -->
+  <!-- ========================================================================= -->
+  <section class="py-space-3xl px-6 md:px-16 max-w-7xl mx-auto border-t border-outline-variant/20" id="contact">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6">
+        <span class="text-label-caps font-label-caps text-primary tracking-[0.25em] uppercase block mb-2">Get in Touch</span>
+        <h2 class="text-headline-md md:text-headline-lg font-headline-lg text-on-surface mb-6">
+          Let’s Discuss &amp; Plan Your Special Day
+        </h2>
+        <p class="text-body-md font-body-md text-tertiary mb-8 font-light leading-relaxed">
+          Whether you are planning a grand wedding celebration or an intimate family function, we would love to understand your vision, check dates, and customize the perfect package for you.
+        </p>
+        <!-- Studio Quick Coordinates -->
+        <div class="space-y-4">
+          <div class="flex items-start space-x-4">
+            <div class="w-10 h-10 rounded bg-surface-container border border-white/10 flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[20px]">location_on</span>
+            </div>
+            <div>
+              <h5 class="text-body-md font-body-md text-on-surface font-semibold">Studio Location</h5>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Bright Diamond Photography, Jadhao Layout, Saturna, Sai Nagar Road, Amravati, Maharashtra, India</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <div class="w-10 h-10 rounded bg-surface-container border border-white/10 flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[20px]">call</span>
+            </div>
+            <div>
+              <h5 class="text-body-md font-body-md text-on-surface font-semibold">Call &amp; WhatsApp</h5>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">+91 9158600517 (Direct Inquiry)</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <div class="w-10 h-10 rounded bg-surface-container border border-white/10 flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined text-[20px]">mail</span>
+            </div>
+            <div>
+              <h5 class="text-body-md font-body-md text-on-surface font-semibold">Email Us</h5>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">brightdiamond.in@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <!-- Quick Interaction Buttons -->
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a class="px-5 py-3 rounded bg-surface-container border border-white/15 text-on-surface hover:text-primary hover:border-primary font-label-caps text-label-caps tracking-wider uppercase transition-colors flex items-center space-x-2" href="tel:+919158600517">
+            <span class="material-symbols-outlined text-[18px]">call</span>
+            <span>Call Now</span>
+          </a>
+          <a class="px-5 py-3 rounded bg-surface-container border border-white/15 text-on-surface hover:text-primary hover:border-primary font-label-caps text-label-caps tracking-wider uppercase transition-colors flex items-center space-x-2" href="https://wa.me/919158600517?text=Hi%20Bright%20Diamond%20photography%20,%20would%20like%20to%20inquire%20about%20photography%20and%20cinematography%20packages%20and%20request%20a%20quotation." target="_blank">
+            <span class="material-symbols-outlined text-[18px]">chat</span>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+      <!-- Right: Studio Visual / Editorial Map Canvas -->
+      <div class="lg:col-span-6 relative">
+        <div class="relative rounded overflow-hidden border border-white/10 aspect-[4/3] group">
+          <img alt="Atelier Interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Chic modern architectural photography studio interior with polished concrete floors, exhibition print frames on charcoal walls, comfortable leather lounge and coffee bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9PwOqlmWtWDy57hJ9BvqZ21P0YheSJo2_bseC3ycgIzAh297B5yRpXBr4kMcghEkcxWu4UiYjiCxRj4B6Txk96JPbh9bhMhiekOZjb7M18-dZCf5yZH-dEHaUDvVv4pdEs_xWu5E6dXAXEWsLpX95c2XV4Ui1Zj3thSQXECe7m9bxd-5y9FkR6ZcUfYNMa63vQquPcOl5U16VivJYGD3xTJjD59vJyLyQZLNNpFYxPU3M2kW00FPNjQ"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+          <div class="absolute bottom-6 left-6 right-6 p-4 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10">
+            <p class="text-label-caps font-label-caps text-primary text-[10px] uppercase tracking-widest">Studio Timings</p>
+            <p class="text-body-md font-body-md text-on-surface">Open Mon to Sat • 10:00 AM – 9:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 13. FOOTER (Footer)                                                       -->
+  <!-- ========================================================================= -->
+  <footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 transition-all duration-200 ease-out">
+    <div class="w-full px-6 md:px-16 py-16 max-w-7xl mx-auto flex flex-col justify-between">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/5">
+        <!-- Brand identity in Footer -->
+        <div class="md:col-span-5">
+          <div class="flex items-center space-x-4 mb-4">
+            <img alt="Bright Diamond Photography Logo" class="h-20 sm:h-24 w-auto object-contain drop-shadow-[0_4px_20px_rgba(242,202,80,0.35)]" src="/logo.png"/>
+            <span class="text-headline-md font-headline-md text-on-surface dark:text-on-surface tracking-widest uppercase block">
+              Bright Diamond
+            </span>
+          </div>
+          <p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm mb-6 leading-relaxed">
+            Premium wedding photography, cinematic films, and event coverage for weddings and family celebrations across Maharashtra and all over India.
+          </p>
+          <div class="text-label-caps font-label-caps text-primary text-[11px] tracking-widest uppercase font-semibold">
+            Capturing Real Moments &amp; Timeless Memories
+          </div>
+        </div>
+        <!-- Direct Nav Links -->
+        <div class="md:col-span-3">
+          <h5 class="text-label-caps font-label-caps text-on-surface uppercase tracking-widest mb-4">Quick Links</h5>
+          <ul class="space-y-2.5">
+            <li><a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#about">About Founder</a></li>
+            <li><a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#services">Our Services</a></li>
+            <li><a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#portfolio">Photo Portfolio</a></li>
+            <li><a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#why-us">Why Choose Us</a></li>
+            <li><a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#testimonials">Client Reviews</a></li>
+            <li><a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#contact">Contact Studio</a></li>
+          </ul>
+        </div>
+        <!-- Legal & Social Contacts -->
+        <div class="md:col-span-4">
+          <h5 class="text-label-caps font-label-caps text-on-surface uppercase tracking-widest mb-4">Connect With Us</h5>
+          <ul class="space-y-2.5 text-body-sm font-body-sm text-on-surface-variant">
+            <li>WhatsApp: <a class="text-primary hover:underline" href="https://wa.me/919158600517?text=Hi%20Bright%20Diamond%20photography%20,%20would%20like%20to%20inquire%20about%20photography%20and%20cinematography%20packages%20and%20request%20a%20quotation." target="_blank" rel="noopener noreferrer">+91 9158600517</a></li>
+            <li>Instagram: <a class="text-primary hover:underline" href="https://www.instagram.com/brightdiamond.in?mdxt=b2lzM3hscjQxcjYx" target="_blank" rel="noopener noreferrer">@brightdiamond.in</a></li>
+            <li>Location: <span class="text-on-surface">Jadhao Layout, Saturna, Sai Nagar Road, Amravati, Maharashtra, India</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copyright Anchor -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-body-sm font-body-sm text-on-surface-variant text-[12px]">
+        <p>© 2026 Bright Diamond Photography &amp; Cinematography. All rights reserved.</p>
+        <p class="mt-2 sm:mt-0 text-outline">Crafted for Unforgettable Celebrations</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING WHATSAPP BUTTON (Bottom Right)                                   -->
+  <!-- ========================================================================= -->
+  <a aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 group flex items-center" href="https://wa.me/919158600517?text=Hi%20Bright%20Diamond%20photography%20,%20would%20like%20to%20inquire%20about%20photography%20and%20cinematography%20packages%20and%20request%20a%20quotation." rel="noopener noreferrer" target="_blank">
+    <div class="hidden md:block mr-3 px-3 py-1.5 rounded-lg bg-surface-container border border-white/10 text-on-surface text-label-caps font-label-caps text-xs shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+      Chat with Director
+    </div>
+    <div class="w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-2xl shadow-emerald-950/80 transition-transform group-hover:scale-110 active:scale-95 border border-emerald-400/40 relative">
+      <span class="w-3 h-3 rounded-full bg-emerald-300 absolute top-1 right-1 animate-ping"></span>
+      <span class="material-symbols-outlined text-[30px]">chat</span>
+    </div>
+  </a>
+
+  <!-- ========================================================================= -->
+  <!-- LIGHTBOX MODAL (Interactive Image Viewer)                                 -->
+  <!-- ========================================================================= -->
+  <div class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-xl flex flex-col justify-between p-4 md:p-8" id="lightboxModal">
+    <div class="flex items-center justify-between">
+      <div class="text-body-md font-body-md text-on-surface font-medium" id="lightboxCaption"></div>
+      <button class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center hover:text-primary transition-colors" onclick="closeLightbox()">
+        <span class="material-symbols-outlined text-[24px]">close</span>
+      </button>
+    </div>
+    <!-- Center Stage -->
+    <div class="relative flex-1 flex items-center justify-center my-4 overflow-hidden">
+      <button class="absolute left-2 md:left-6 z-10 w-12 h-12 rounded-full bg-surface-container/70 backdrop-blur text-white flex items-center justify-center hover:text-primary hover:bg-surface-container transition-all" onclick="prevLightboxImage()">
+        <span class="material-symbols-outlined text-[28px]">chevron_left</span>
+      </button>
+      <img alt="Expanded Image" class="max-h-[798px] max-w-[90vw] object-contain rounded shadow-2xl transition-all duration-300" data-alt="Expanded gallery artwork showing royal wedding ceremony in golden chiaroscuro tones" id="lightboxImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVqETlhhoHKc3cABUfqU59sIVVI_WlL0DELwne5SckjCkiHj2nVEbJII8vrEw3FSTEtyp5u16lvhdWA_8jJl7TDZP909KzzBFWr_udRkE02j9ae4sz-JWQdMJSWdHtulTEpHnYSNNqzDdeU7ECWlUwfOpMPrQNzpZM6yywuyir5P_jFgIbbF51e3G-HhYnvBLoU9jrY4X0HoQCMsyuRhkStLj89GsOHpB5BYVPilhU0fIpB_O50rQYmg"/>
+      <button class="absolute right-2 md:right-6 z-10 w-12 h-12 rounded-full bg-surface-container/70 backdrop-blur text-white flex items-center justify-center hover:text-primary hover:bg-surface-container transition-all" onclick="nextLightboxImage()">
+        <span class="material-symbols-outlined text-[28px]">chevron_right</span>
+      </button>
+    </div>
+    <!-- Lightbox Bottom Footer Controls -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-white/10 pt-4">
+      <div class="text-body-sm font-body-sm text-tertiary" id="lightboxDetails"></div>
+      <a class="px-5 py-2 rounded bg-primary-container text-on-primary font-label-caps text-label-caps uppercase tracking-wider font-semibold hover:bg-primary transition-colors" href="#contact" onclick="closeLightbox()">
+        Book This Style →
+      </a>
+    </div>
+  </div>
+
+
+
+  <!-- ========================================================================= -->
+  <!-- CONFIRMATION SUBMISSION TOAST / DIALOG                                   -->
+  <!-- ========================================================================= -->
+  <div class="fixed top-24 right-6 z-50 hidden max-w-md p-5 rounded bg-surface-container border border-primary/50 shadow-2xl shadow-black/80 flex items-start space-x-3 transition-all" id="toastSuccess">
+    <span class="material-symbols-outlined text-primary text-[26px]">check_circle</span>
+    <div>
+      <h5 class="text-body-md font-body-md text-on-surface font-semibold">Quote Request Transmitted!</h5>
+      <p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+        Thank you! Our creative director will reach out on WhatsApp &amp; Phone shortly with tailored dates.
+      </p>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT LOGIC & INTERACTIONS                                           -->
+  <!-- ========================================================================= -->
+  <script>
+    // 1. Mobile Drawer Navigation Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if (mobileBtn && mobileDrawer) {
+      mobileBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => mobileDrawer.classList.add('hidden'));
+      });
+    }
+
+    // 2. Sound Toggle Micro-Interaction
+    const soundBtn = document.getElementById('ambientSoundBtn');
+    let soundActive = false;
+    if (soundBtn) {
+      soundBtn.addEventListener('click', () => {
+        soundActive = !soundActive;
+        const icon = soundBtn.querySelector('span');
+        if (soundActive) {
+          if (icon) icon.textContent = 'volume_up';
+          soundBtn.classList.add('text-primary', 'border-primary');
+        } else {
+          if (icon) icon.textContent = 'volume_off';
+          soundBtn.classList.remove('text-primary', 'border-primary');
+        }
+      });
+    }
+
+    // 3. WhatsApp Direct Inquiry from Service Cards
+    window.prefillService = function(serviceName) {
+      const msg = `Hi Bright Diamond photography , would like to inquire about ${serviceName} photography and cinematography packages and request a quotation.`;
+      window.open(`https://wa.me/919158600517?text=${encodeURIComponent(msg)}`, '_blank');
+    };
+
+    // 4. Portfolio Filter System
+    window.filterGallery = function(category, clickedBtn) {
+      document.querySelectorAll('.filter-tab').forEach(b => {
+        b.classList.remove('active', 'bg-primary-container', 'text-on-primary', 'font-medium');
+        b.classList.add('text-on-surface-variant');
+      });
+      if (clickedBtn) {
+        clickedBtn.classList.add('active', 'bg-primary-container', 'text-on-primary', 'font-medium');
+        clickedBtn.classList.remove('text-on-surface-variant');
+      }
+
+      const items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    };
+
+    // 5. Interactive Lightbox
+    const galleryData = [
+      {
+        title: "Coastal Romance",
+        category: "Pre-Wedding & Destination",
+        specs: "Bright Diamond Photography",
+        prompt: "Romantic couple on beach",
+        src: "/portfolio-1.jpg"
+      },
+      {
+        title: "Reception Smiles",
+        category: "Wedding & Reception",
+        specs: "Bright Diamond Photography",
+        prompt: "Smiling couple in reception attire",
+        src: "/portfolio-2.jpg"
+      },
+      {
+        title: "Joy of Tradition",
+        category: "Cultural & Street Shoot",
+        specs: "Bright Diamond Photography",
+        prompt: "Couple celebrating in traditional attire",
+        src: "/portfolio-3.jpg"
+      },
+      {
+        title: "Candid Storytelling",
+        category: "Authentic Moments",
+        specs: "Bright Diamond Photography",
+        prompt: "Candid moments at tea stall",
+        src: "/portfolio-4.jpg"
+      },
+      {
+        title: "Mehendi Art & Details",
+        category: "Rituals & Details",
+        specs: "Bright Diamond Photography",
+        prompt: "Mehendi hands and wedding ring closeup",
+        src: "/portfolio-5.jpg"
+      },
+      {
+        title: "Bridal Elegance & Mehendi",
+        category: "Wedding Details",
+        specs: "Bright Diamond Photography",
+        prompt: "Bride resting hands on groom's suit",
+        src: "/portfolio-6.jpg"
+      },
+      {
+        title: "Temple Steps Traditional Moments",
+        category: "Traditional & Culture",
+        specs: "Bright Diamond Photography",
+        prompt: "Couple on temple steps sharing a traditional moment",
+        src: "/portfolio-7.jpg"
+      },
+      {
+        title: "Sacred Pheras & Gathbandhan",
+        category: "Wedding Rituals",
+        specs: "Bright Diamond Photography",
+        prompt: "Holding fingers during wedding rituals",
+        src: "/portfolio-8.jpg"
+      },
+      {
+        title: "Tender Affection",
+        category: "Romantic Portraits",
+        specs: "Bright Diamond Photography",
+        prompt: "Groom kissing bride's hand with gentle smile",
+        src: "/portfolio-9.jpg"
+      }
+    ];
+
+    let currentLightboxIdx = 0;
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxDetails = document.getElementById('lightboxDetails');
+
+    window.openLightbox = function(index) {
+      currentLightboxIdx = index;
+      updateLightboxDisplay();
+      if (lightboxModal) lightboxModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeLightbox = function() {
+      if (lightboxModal) lightboxModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    };
+
+    function updateLightboxDisplay() {
+      const data = galleryData[currentLightboxIdx];
+      if (lightboxImg && data) {
+        lightboxImg.src = data.src;
+        lightboxImg.setAttribute('data-alt', data.prompt);
+      }
+      if (lightboxCaption && data) lightboxCaption.textContent = data.title + " — " + data.category;
+      if (lightboxDetails && data) lightboxDetails.textContent = data.specs;
+    }
+
+    window.nextLightboxImage = function() {
+      currentLightboxIdx = (currentLightboxIdx + 1) % galleryData.length;
+      updateLightboxDisplay();
+    };
+
+    window.prevLightboxImage = function() {
+      currentLightboxIdx = (currentLightboxIdx - 1 + galleryData.length) % galleryData.length;
+      updateLightboxDisplay();
+    };
+
+
+
+
+
+    };
+  </script>
+
+  <!-- Scroll Animation Script -->
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
